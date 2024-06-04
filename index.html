@@ -20,6 +20,15 @@
                 width: 100%;
 
             }
+            figure{
+                width: 100%;
+                margin: 0;
+            }
+            figcaption{
+                margin-top: 10px;                
+                font-size: 1.2em;
+                font-weight: bold;
+            }
         </style>
     </head>
     <body>
@@ -30,7 +39,10 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas iste veritatis commodi, debitis dolorum, consequatur incidunt deserunt corrupti impedit pariatur aliquid inventore repudiandae, nulla ad vel recusandae porro! Recusandae, beatae!</p>
             </div>
             <div class="module">                
-                <canvas id="demo"></canvas>
+                <figure>
+                    <canvas id="demo"></canvas>
+                    <figcaption>Caption here</figcaption>
+                </figure>
                 <script>
                     var canvas = document.getElementById('demo');
                     var ctx = canvas.getContext('2d');
